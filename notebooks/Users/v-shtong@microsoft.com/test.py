@@ -11,9 +11,9 @@ yellow_path = "abfss://root@azuresynapsepiero.dfs.core.windows.net/nyctlc/yellow
 
 # COMMAND ----------
 
-df_fhv = spark.read.parquet(Fhv_path)
+df_yellow = spark.read.parquet(yellow_path)
 
 
 # COMMAND ----------
 
-df_fhv.show(1)
+df_yellow.show(1)
