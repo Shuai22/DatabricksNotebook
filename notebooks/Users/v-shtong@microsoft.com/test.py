@@ -16,4 +16,8 @@ df_yellow = spark.read.parquet(yellow_path)
 
 # COMMAND ----------
 
-df_yellow.show(1)
+df_yellow.show(10)
+
+# COMMAND ----------
+
+display(df_yellow)
